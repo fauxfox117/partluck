@@ -1,2 +1,4 @@
 [build]
   base = "partluck"
+  command = "npm run build"
+  publish = ".next"
