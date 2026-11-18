@@ -3,7 +3,7 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
-    <main className="home-hero">
+    <section className="home-hero">
       <div className="hero-inner">
         <div className="hero-copy">
           <p className="hero-eyebrow">A hybrid co-op &amp; platform</p>
@@ -40,6 +40,6 @@ export default function Hero() {
           />
         </div>
       </div>
-    </main>
+    </section>
   );
 }

@@ -1,0 +1,130 @@
+.how-it-works {
+  background-color: #ffffff;
+  color: #19372b;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  scroll-margin-top: 1rem;
+}
+
+.how-inner {
+  width: min(calc(100% - 3rem), 76rem);
+  margin: 0 auto;
+  padding: 4rem 0 5rem;
+}
+
+.how-intro {
+  max-width: 28rem;
+}
+
+.how-intro h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.how-intro p {
+  margin: 1.25rem 0 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 0.75rem;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-step {
+  min-height: 18.5rem;
+  padding: 1.5rem 1.25rem;
+  border-radius: 0.75rem;
+}
+
+.how-step-number {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.how-step h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.how-step p {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.how-step-brown {
+  background-color: #45201a;
+  color: #ffffff;
+}
+
+.how-step-brown .how-step-number {
+  color: #eab247;
+}
+
+.how-step-rust {
+  background-color: #8f4330;
+  color: #ffffff;
+}
+
+.how-step-rust .how-step-number {
+  color: #f3c971;
+}
+
+.how-step-blush {
+  background-color: #d9a389;
+  color: #19372b;
+}
+
+.how-step-gold {
+  background-color: #ddac4f;
+  color: #19372b;
+}
+
+.how-preview {
+  display: flex;
+  min-height: 11.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border: 1.5px dashed #85bda4;
+  border-radius: 1.5rem;
+  background-color: #e2eee6;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 62rem) {
+  .how-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .how-step {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 35rem) {
+  .how-inner {
+    width: min(calc(100% - 2.5rem), 76rem);
+    padding: 3rem 0 4rem;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import icon from "../../icon.svg";
 import "./Header.css";
 
 export default function Header() {
@@ -6,12 +8,14 @@ export default function Header() {
     <header className="site-header">
       <div className="header-inner">
         <Link className="site-brand" href="/" aria-label="Partluck home">
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-            <span />
-          </span>
+          <Image
+            className="site-brand-mark"
+            src={icon}
+            alt=""
+            width={46}
+            height={46}
+            priority
+          />
           <span className="site-brand-name">Partluck</span>
         </Link>
 

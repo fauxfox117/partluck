@@ -23,32 +23,11 @@
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
+.site-brand-mark {
+  display: block;
   width: 2.875rem;
   height: 2.875rem;
   flex-shrink: 0;
-  grid-template-columns: repeat(2, 0.875rem);
-  grid-template-rows: repeat(2, 0.875rem);
-  align-content: center;
-  justify-content: center;
-  gap: 0.0625rem;
-  border-radius: 50%;
-  background-color: #f5f2e8;
-}
-
-.brand-mark span {
-  border-radius: 50%;
-  background-color: #39705a;
-}
-
-.brand-mark span:nth-child(2),
-.brand-mark span:nth-child(3) {
-  background-color: #244637;
-}
-
-.brand-mark span:nth-child(4) {
-  background-color: #eab247;
 }
 
 .site-brand-name {
