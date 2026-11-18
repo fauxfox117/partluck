@@ -1,0 +1,131 @@
+.site-header {
+  width: 100%;
+  background-color: #19372b;
+  color: #f5f2e8;
+}
+
+.header-inner {
+  display: flex;
+  width: min(calc(100% - 3rem), 73rem);
+  min-height: 6.125rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+  margin: 0 auto;
+}
+
+.site-brand {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 2.875rem;
+  height: 2.875rem;
+  flex-shrink: 0;
+  grid-template-columns: repeat(2, 0.875rem);
+  grid-template-rows: repeat(2, 0.875rem);
+  align-content: center;
+  justify-content: center;
+  gap: 0.0625rem;
+  border-radius: 50%;
+  background-color: #f5f2e8;
+}
+
+.brand-mark span {
+  border-radius: 50%;
+  background-color: #39705a;
+}
+
+.brand-mark span:nth-child(2),
+.brand-mark span:nth-child(3) {
+  background-color: #244637;
+}
+
+.brand-mark span:nth-child(4) {
+  background-color: #eab247;
+}
+
+.site-brand-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  line-height: 1;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.primary-nav a {
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.primary-nav a:hover {
+  color: #eab247;
+}
+
+.greenhouse-link {
+  display: inline-flex;
+  min-height: 3.5rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.625rem;
+  border-radius: 999px;
+  background-color: #a14530;
+  color: #f8f2e8;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.greenhouse-link:hover {
+  background-color: #b65339;
+}
+
+.site-header a:focus-visible {
+  outline: 3px solid #eab247;
+  outline-offset: 4px;
+}
+
+@media (max-width: 56.25rem) {
+  .header-inner {
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
+  .primary-nav {
+    order: 1;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    padding: 0.25rem 0 0.5rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .header-inner {
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+
+  .primary-nav {
+    order: 0;
+    padding: 0;
+  }
+}
