@@ -30,8 +30,8 @@ export default function Home() {
             className="hero-photo-placeholder"
             role="img"
             aria-label="Hero photo showing neighbors at a harvest picnic with boxes of produce"
+            src="/Users/stevenbolin/Documents/GitHub/partluck/partluck/public/images/annie-spratt-trDyGuXI9YM-unsplash.jpg"
           >
-            [Hero photo: neighbors at a harvest picnic, boxes of produce]
           </div>
         </div>
       </main>
